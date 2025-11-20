@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 991.98px){
+    header .container {
+        flex-wrap: wrap; 
+    }
+
+    #menuprincipal {
+        display: none;
+        flex-direction: row; 
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    #menuprincipal a.pags {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    #linha-vertical {
+        display: none;
+    }
+
+    .material-icons {
+        display: block; 
+    }
+
+    footer div h1#caedi {
+        display: none;
+    }
+
+    footer p#copyright {
+        font-size: 0.6em;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #burguer {
+        display: none;
+    }
+
+    #menuprincipal {
+        display: flex !important; 
+    }
+}
