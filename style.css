@@ -19,11 +19,11 @@
     letter-spacing: 1px;
     padding: 0;
     margin: 0;
-    font-family: 'tahoma';
+    box-sizing: border-box; /*BORDA FAZ PARTE DO CALCULO DA CAIXA*/
 }
-
 body{
     background-color: #a7bcf1;
+    font-family: 'tahoma';
 }
 
 header{
@@ -97,11 +97,9 @@ main{
     padding-top: 3vh;
     font-family: 'tahomabd';
     color: var(--cor3);
-    height: 1200px;
 }
 main section.container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
@@ -114,8 +112,9 @@ main section.container{
 main article#doacao{
     background-color: var(--cor1);
     margin: 20px;
-    padding: 10px 40px 40px 40px;
-    max-width: 360px;
+    padding: 10px 30px 40px 30px;
+    width: 90%;
+    max-width: 480px;
     border-radius: 1cap;
     text-align: center;
 }
@@ -129,7 +128,7 @@ main article#doacao p{
 
 .contribua{
     margin: auto;
-    width: 80%;
+    width: 85%;
     padding: 20px;
     text-align: center;
     font-size: 0.8em;
@@ -150,7 +149,7 @@ a.botao{
     border-color: rgba(81, 44, 146, 0.459);
     border-radius: 1cap;
     display: flex;
-    padding: 8px 4px 12px 8px;
+    padding: 8px 4px 12px 10px;
     transition: 0.5s;
     text-decoration: none;
 }
@@ -158,12 +157,12 @@ a.botao:hover{
     transform: scale(1.1);
 }
 a.botao img{
-    margin: 5px 5px 5px 10px;
+    margin: auto;
     align-items: center;
 }
 a.botao h2{
     padding: 5px;
-    margin-right: 10px;
+    margin: center;
     align-items: center;
 }
 
@@ -175,29 +174,77 @@ a.botao h2{
 
 main article#galeria{
     background-color: var(--cor3);
-    margin: 20px;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 1cap;
     height: 400px;
-    max-width: 450px;
+    width: 90%;
+    max-width: 480px;
 }
 main article#galeria h1{
     color: white;
+    text-align: center;
+}
+
+.eventos{
+    padding: 20px 7vw 50px 7vw;
+}
+.eventos p{
+    text-align: justify;
+}
+section.eventos article{
+    background-color: var(--cor1);
+    border-radius: 2cap;
+    padding: 20px;
+    font-size: 0.6em;
+    margin-top: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: 0.5s;
+}
+
+section.eventos article:hover{
+    transform: scale(1.04);
+}
+.titulo{
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.eventos article div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.eventos article img{
+    flex-direction: column;
+    height: 66%;
+    padding: 10px 0 10px 0;
+}
+.eventos article h2{
+    color: var(--cor3);
+    text-decoration: none;
+    transform: translate(0px, -2px);
+    transition: 0.5s;
+    cursor: pointer;    
+}
+.eventos article h2:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+    transform: translate(0px, -2px);
 }
 /*---------------------------------------------------------*/
 
 footer{
+    position: relative;
     text-align: center;
     padding-top: 20px;
-    position: fixed;
-    height: 100px;
-    width: 100vw;
+    height: 125px;
     bottom: 0;
     background-color: var(--cor3);
 }
 
 footer div.container{
-    padding: 0 5vw 10px 7vw;
+    padding: 0 7vw 10px 7vw;
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
@@ -247,22 +294,14 @@ footer img{
 }
 
 footer hr{
-    height: 1px;
-    width: 100vw;
-    position: fixed;
     bottom: 50px;
     border-color: #1f243b;
 }
 
 footer p#copyright{
-    padding-bottom: 20px;
-    width: 100vw;
+    padding: 15px 0 20px 0;
     text-align: center;
-    position: fixed;
     bottom: 0;
     font-size: 0.8em;
     color: rgba(255, 255, 255, 0.651);
 }
-
-
-
