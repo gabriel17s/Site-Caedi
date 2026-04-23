@@ -27,6 +27,43 @@
         display: none;
     }
 
+    main section.container{
+        padding: 0 0 10px 0;
+    }
+
+    main article#doacao{
+        padding: 15px;
+    }
+    .contribua{
+    width: 90%;}
+
+    .cards img {
+        padding: 0;
+        margin: auto;
+        width: 18.4em;
+        height: auto;
+        display: block;
+    }
+    main article#galeria{
+        border-radius: 1cap;
+        height: auto;
+        width: 90%;
+        max-width: 480px;
+    }
+
+    #iconeft{
+        height: 45px;
+        margin: auto;
+        cursor: grab;
+    }
+
+    main article#galeria h1{
+        font-size: 1.5em;
+        padding: 0px 0 10px 0;
+        text-align: left;
+        margin: 0;
+    }
+
     .material-icons {
         display: block; 
     }
@@ -40,6 +77,7 @@
         transition: 0.5s;
     }
 }
+/*------------------------------------*/
 
 @media screen and (min-width: 768px){
     #burguer {
@@ -56,5 +94,20 @@
 
     main article#galeria{
         width: 46%;
+    }
+
+    .itemseventos{
+        display: flex;
+        gap: 10px;
+        flex-flow: row wrap;
+    }
+    section.eventos article{
+        width: 41vw;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    section.eventos article{
+        width: 20.5vw;
     }
 }

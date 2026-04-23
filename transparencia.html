@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAEDI | Transparência</title>
+    <link rel="shortcut icon" href="caedi educação especial.png" type="image.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="items">
+                <img class="items" src="caedi educação especial.png" alt="Logotipo">
+            </a>
+            <span id="burguer" class="material-icons" onclick="clickMenu()" >menu</span>
+            <div class="items" id="menuprincipal">
+                <a class="pags" href="contato.html">Contato</a>
+                <div class="pags" id="linha-vertical"></div>
+                <a class="pags" href="profs.html">Profissionais</a>
+                <div class="pags" id="linha-vertical"></div>
+                <a class="pags" href="sobrenos.html">Sobre Nós</a>
+                <div class="pags" id="linha-vertical"></div>
+                <a class="pags" href="transparencia.html">Transparência</a>
+            </div>
+        </div>
+    </header>
+
     
+    <main>
+        <h1>TRANSPARÊNCIA</h1>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <h1 class="subcontainer" id="caedi">CAEDI de Dracena <br><span>Centro de Apoio em Excelência a Deficiência Intelectual</span></h1>
+            <div class="subcontainer">
+                <h1>Nossas redes:</h1>
+                <a href="https://www.facebook.com/caedi.dracena" target="_blank" rel="nofollow" class="items"><img id="contatos" src="imagens/face.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/caedidracena/" target="_blank" rel="nofollow" class="items"><img id="contatos" src="imagens/insta.png" alt="facebook" ></a>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">© 2025 CAEDI Dracena-SP. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        function clickMenu() {
+            if (menuprincipal.style.display == 'flex') {
+                menuprincipal.style.display = 'none'
+            } else {
+                menuprincipal.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>

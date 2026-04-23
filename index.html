@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -35,7 +36,7 @@
                 <h1>Somos o CAEDI Dracena</h1>
                 <p>O CAEDI é uma associação de pais que luta por um espaço para acolher pessoas com deficiência intelectual de Dracena e região.</p>
                 <div class="contribua">
-                    <img src="imagens/coracao.png" alt="Contribua" style="width: 90px;">
+                    <img src="imagens/coracao.png" alt="Contribua" style="width: 120px;">
                     <h1>Contribua com esta Obra de Amor</h1>
                     <p>Você estará ajudando no tratamento e desenvolvimento de crianças, jovens e adultos.</p>
                     <a href="doacao.html" class="botao">
@@ -45,21 +46,87 @@
                 </div>
             </article>
             <article id="galeria" class="items">
-                <h1>Galeria de Fotos</h1>
+                <div id="galeriafts">
+                    <img id="iconeft" src="iconeft.png" alt="Galeria de Fotos">
+                    <h1>Galeria de Fotos</h1>
+                </div>
+                <div class="galeriafotos">
+                    <ul class="cards">
+                    <li><img src="Galeria/1.jpg"></li>
+                    <li><img src="Galeria/2.jpg"></li>
+                    <li><img src="Galeria/3.jpg"></li>
+                    <li><img src="Galeria/4.jpg"></li>
+                    <li><img src="Galeria/5.jpg"></li>
+                    <li><img src="Galeria/6.jpg"></li>
+                    <li><img src="Galeria/7.jpg"></li>
+                    <li><img src="Galeria/8.jpg"></li>
+                    <li><img src="Galeria/9.jpg"></li>
+                    <li><img src="Galeria/10.jpg"></li>
+                    <li><img src="Galeria/11.jpg"></li>
+                    <li><img src="Galeria/12.jpg"></li>
+                    <li><img src="Galeria/13.jpg"></li>
+                    <li><img src="Galeria/14.jpg"></li>
+                    <li><img src="Galeria/15.jpg"></li>
+                    <li><img src="Galeria/16.jpg"></li>
+                    <li><img src="Galeria/17.jpg"></li>
+                    <li><img src="Galeria/18.jpg"></li>
+                    <li><img src="Galeria/19.jpg"></li>
+                    <li><img src="Galeria/20.jpg"></li>
+                    </ul>
+                    <button id="prev"><img src="setaesq.png" alt="Anterior"></button>
+                    <button id="next"><img src="setadir.png" alt="Anterior"></button>
+                </div>
             </article>
         </section>
         <section class="eventos">
-            <h1>Eventos</h1>
+            <h1>Últimos Eventos</h1>
             <p>A sua participação em eventos do CAEDI ajuda no custeio das terapias das nossas crianças e jovens!
             </p>
-                <article>
-                    <div class="titulo">
-                        <h1>Rifa da Cesta de Natal</h1>
-                        <h1>dez.2025</h1>
-                    </div>
-                    <img src="imagens/Cesta natal 2025.jpg" alt="Rifa de Natal" style="width: 100%;">
-                    <h2>Saiba mais</h2>
-                </article>
+                <div class="itemseventos">
+                    <article>
+                        <div class="titulo">
+                            <h1>Rifa Cesta de Natal</h1>
+                            <h1>dez.2025</h1>
+                        </div>
+                        <img src="imagens/Cesta natal 2025.jpg" alt="Rifa de Natal" style="width: 100%;">
+                        <button>
+                            <h2>Saiba mais</h2>
+                        </button>
+                    </article>
+                    <article>
+                        <div class="titulo">
+                            <h1>Evento 2</h1>
+                            <h1>dez.2025</h1>
+                        </div>
+                        <img src="imagens/Cesta natal 2025.jpg" alt="Rifa de Natal" style="width: 100%;">
+                        <button>
+                            <h2>Saiba mais</h2>
+                        </button>
+                    </article>
+                    <article>
+                        <div class="titulo">
+                            <h1>Evento 3</h1>
+                            <h1>dez.2025</h1>
+                        </div>
+                        <img src="imagens/Cesta natal 2025.jpg" alt="Rifa de Natal" style="width: 100%;">
+                        <button>
+                            <h2>Saiba mais</h2>
+                        </button>
+                    </article>
+                    <article>
+                        <div class="titulo">
+                            <h1>Evento 4</h1>
+                            <h1>dez.2025</h1>
+                        </div>
+                        <img src="imagens/Cesta natal 2025.jpg" alt="Rifa de Natal" style="width: 100%;">
+                        <button>
+                            <h2>Saiba mais</h2>
+                        </button>
+                    </article>
+                </div>
+                <a href="eventos.html" class="botaoeventos">
+                        <h2>Outros Eventos</h2>
+                </a>
         </section>
     </main>
 
@@ -73,7 +140,7 @@
             </div>
         </div>
         <hr>
-        <p id="copyright">© 2025 CAEDI Dracena-SP. Todos os direitos reservados.</p>
+        <p id="copyright">© 2026 CAEDI Dracena-SP. Todos os direitos reservados.</p>
     </footer>
 
 
@@ -87,5 +154,46 @@
             }
         }
     </script>
+
+    <!--CHAT GPT-->
+    <script>
+        const cards = document.querySelector('.cards');
+        const total = document.querySelectorAll('.cards li').length;
+
+        let index = 0;
+
+        document.getElementById('next').onclick = () => {
+        index = (index + 1) % total;
+        update();
+        };
+
+        document.getElementById('prev').onclick = () => {
+        index = (index - 1 + total) % total;
+        update();
+        };
+
+        function update() {
+        cards.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+
+    <!--CHAT GPT-->
+    <script>
+        const textos = [
+            "Página Inicial",
+            "CAEDI DRACENA"
+        ];
+
+        let i = 0;
+
+        setInterval(() => {
+            document.title = textos[i];
+            i = (i + 1) % textos.length;
+        }, 1600); //tempo de mudança
+    </script>
+
+        </body>
+        </html>
+
 </body>
 </html>

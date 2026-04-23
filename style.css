@@ -177,38 +177,118 @@ main article#galeria{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 1cap;
-    height: 400px;
+    height: 580px;
     width: 90%;
     max-width: 480px;
 }
-main article#galeria h1{
-    color: white;
-    text-align: center;
+
+main #galeriafts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.eventos{
-    padding: 20px 7vw 50px 7vw;
+#iconeft{
+    height: 30px;
+    left: 0;
+    padding: 0;
+    transform: translateY(-4px);
+    margin: 2px;
+    cursor: grab;
 }
+
+main article#galeria h1{
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#galeria {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.galeriafotos {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.4s ease;
+}
+
+.cards li {
+    margin: 10px;
+}
+
+.cards img {
+    padding: 0 20px 0 20px;
+    margin: auto;
+    width: 420px;
+    height: auto;
+    display: block;
+}
+
+.galeriafotos button {
+    position: absolute;
+    margin: -10px;
+    top: 45%;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.galeriafotos button img{
+    height: 50px;
+    transition: 0.2s;
+}
+
+.galeriafotos button img:hover{
+    opacity: 0.8;
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+.eventos{
+    padding: 20px 6vw 50px 6vw;
+}
+
+.eventos h1{
+    text-align: center;
+    font-size: 2.4cap;
+    margin-bottom: 10px;
+}
+
 .eventos p{
-    text-align: justify;
+    text-align: center;
+    padding-bottom: 10px;
 }
 section.eventos article{
     background-color: var(--cor1);
     border-radius: 2cap;
-    padding: 20px;
+    padding: 20px 0 15px 0;
     font-size: 0.6em;
     margin-top: 18px;
     display: flex;
     flex-flow: column nowrap;
     transition: 0.5s;
+    max-width: 500px;
 }
 
 section.eventos article:hover{
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 .titulo{
     flex-flow: row nowrap;
     width: 100%;
+    padding: 0 20px 0 20px;
 }
 .eventos article div{
     display: flex;
@@ -217,29 +297,73 @@ section.eventos article:hover{
 }
 .eventos article img{
     flex-direction: column;
-    height: 66%;
+    width: 100%;
     padding: 10px 0 10px 0;
 }
 .eventos article h2{
-    color: var(--cor3);
+    color: var(--cor1);
     text-decoration: none;
     transform: translate(0px, -2px);
     transition: 0.5s;
     cursor: pointer;    
 }
 .eventos article h2:hover{
-    color: var(--cor2);
     text-decoration: underline;
     transform: translate(0px, -2px);
+}
+
+.eventos button{
+    background-color: #936ace;
+    border-style: solid;
+    font-size: 1.2em;
+    border-color: rgba(81, 44, 146, 0.459);
+    border-radius: 1cap;
+    margin: auto;
+    padding: 7px;
+    width: 150px;
+    border-radius: 1cap;
+    transition: 0.5s;
+    border-width: 1.5px;
+}
+
+.eventos button:hover{
+    transform: scale(1.05);
+}
+
+.botaoeventos{
+    margin: auto;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    text-align: center;
+    width: 220px;
+    margin-top: 40px;
+    border-style: solid;
+    font-size: 0.8em;
+    border-width: 0.4cap;
+    border-color: var(--cor3);
+    border-radius: 1cap;
+    display: flex;
+    padding: 8px 4px 12px 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.botaoeventos:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    background-color: rgba(255, 0, 0, 0.065);
+}
+.botaoeventos h2{
+    padding: 5px;
+    margin: auto;
+    align-items: center;
 }
 /*---------------------------------------------------------*/
 
 footer{
-    position: relative;
     text-align: center;
     padding-top: 20px;
     height: 125px;
-    bottom: 0;
+    width: 100%;
     background-color: var(--cor3);
 }
 
