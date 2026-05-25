@@ -64,6 +64,23 @@
         margin: 0;
     }
 
+    .group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1em;
+    animation: spin 60s infinite linear;
+    padding-right: 0.1em;
+    }
+
+    .carrossel .card {
+        padding: 0.3em;
+    }
+
+    .carrossel .card img{
+        height: 45vh;
+    }
+
     .material-icons {
         display: block; 
     }

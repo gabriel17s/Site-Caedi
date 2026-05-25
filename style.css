@@ -27,12 +27,11 @@ body{
 }
 
 header{
-    padding:10px 5vw 10px 7vw;
+    padding: 10px 5vw 10px 7vw;
     bottom: 0;
     background-color: var(--cor1);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.137);
-
-}
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.137);}
+    
 
 .material-icons{
     transform: scale(1.5);
@@ -253,16 +252,77 @@ main article#galeria h1{
     opacity: 0.8;
 }
 
+.profissionais{
+    padding: 30px 6vw 10px 6vw;
+}
+
+.profissionais h1{
+    text-align: center;
+    font-size: 3cap;
+    margin-bottom: 10px;
+}
+
+.profissionais p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*------------- TUTORIAL CARROSSEL ------------*/
+.carrossel{
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1em;
+    animation: spin 120s infinite linear;
+    padding-right: 0.1em;
+}
+
+.card {
+    flex: 0 0 5em;
+    height: auto;
+    padding: 0.8em;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.card img{
+    height: 28vw;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.card img:hover{
+    transform: scale(1.04);
+}
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+/* ---------- FIM DO TUTORIAL -------------*/
+
 #prev { left: 10px; }
 #next { right: 10px; }
 
 .eventos{
-    padding: 20px 6vw 50px 6vw;
+    padding: 0px 6vw 50px 6vw;
 }
 
 .eventos h1{
     text-align: center;
-    font-size: 2.4cap;
+    font-size: 3cap;
     margin-bottom: 10px;
 }
 
