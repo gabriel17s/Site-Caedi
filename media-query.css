@@ -93,6 +93,9 @@
         font-size: 0.6em;
         transition: 0.5s;
     }
+    footer div#redes{
+        margin: auto;
+    }
 }
 /*------------------------------------*/
 
