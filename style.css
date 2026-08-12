@@ -10,7 +10,7 @@
 }
 :root{
     --cor1:white;
-    --cor2:#a7bcf1;
+    --cor2:#c5d3f6;
     --cor3:#293050;
     --cor4:black;
 }
@@ -22,7 +22,7 @@
     box-sizing: border-box; /*BORDA FAZ PARTE DO CALCULO DA CAIXA*/
 }
 body{
-    background-color: #a7bcf1;
+    background-color: #c5d3f6;
     font-family: 'tahoma';
 }
 
@@ -265,6 +265,7 @@ main article#galeria h1{
 .profissionais p{
     text-align: center;
     padding-bottom: 10px;
+    margin: 0 22% 0 22%;
 }
 
 /*------------- TUTORIAL CARROSSEL ------------*/
@@ -329,6 +330,7 @@ main article#galeria h1{
 .eventos p{
     text-align: center;
     padding-bottom: 10px;
+    margin: 0 22% 0 22%;
 }
 section.eventos article{
     background-color: var(--cor1);
