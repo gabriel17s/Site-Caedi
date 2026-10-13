@@ -106,7 +106,7 @@ main section.container{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 0 4vw 0 4vw;
+    padding: 20px 4vw 10px 4vw;
 }
 main article#doacao{
     background-color: var(--cor1);
@@ -419,18 +419,45 @@ section.eventos article:hover{
     margin: auto;
     align-items: center;
 }
+
+.eventos button a{
+    text-decoration:none;}
+
+.eventos button{
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+/*---------------------SOBRE NÓS---------------------------*/
+main #sobrenos{
+    background-color: white;
+    width: 70%;
+    border-radius: 12px;
+    padding: 40px 70px 70px 70px;
+    text-align: justify;
+    line-height: 24px;
+    margin: 50px 0 70px 0;
+}
+
+main #sobrenos div{
+    text-align: center;
+}
+main #sobrenos img{
+    width: 80%;
+}
+
 /*---------------------------------------------------------*/
 
 footer{
+    height: 9em;
     text-align: center;
     padding-top: 20px;
-    height: 125px;
     width: 100%;
     background-color: var(--cor3);
 }
 
 footer div.container{
-    padding: 0 7vw 10px 7vw;
+    padding: 0 7vw 20px 5vw;
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
@@ -440,6 +467,14 @@ footer div.container{
 #caedi{
     align-items: center;
     flex-direction: column;
+}
+#contato{
+    align-items: center;
+    flex-direction: column;
+    line-height: 10px;
+}
+#contato p{
+    font-size: 12px;
 }
 
 footer span{
@@ -455,6 +490,7 @@ footer span{
     flex-flow: row nowrap;
     transition: 0.4s;
 }
+
 
 footer .items{
     align-content: space-around;
@@ -482,6 +518,10 @@ footer img{
 footer hr{
     bottom: 50px;
     border-color: #1f243b;
+}
+
+footer p{
+    color: white;
 }
 
 footer p#copyright{

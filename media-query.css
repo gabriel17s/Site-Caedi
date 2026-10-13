@@ -89,6 +89,16 @@
         display: none;
     }
 
+    #redes h1{
+        display: none;
+    }
+    
+    #contato p{
+        width: 60%;
+        font-size: 9px;
+        line-height: 15px;
+    }
+
     footer p#copyright {
         font-size: 0.6em;
         transition: 0.5s;
@@ -96,7 +106,36 @@
     footer div#redes{
         margin: auto;
     }
+
+    main #sobrenos{
+    width: 92%;
+    border-radius: 12px;
+    padding: 30px 20px 40px 20px;
+    line-height: 24px;
+    text-align: left;
+    margin: 20px 0 30px 0;
+    }
+
+    main #sobrenos div{
+        text-align: center;
+    }
+
+    main #sobrenos div h1{
+        line-height: 33px;
+    }
+    main #sobrenos img{
+        width: 90%;
+    }
 }
+
+.eventos p{
+    margin: 0 5% 0 5%;
+}
+.profissionais p{
+    margin: 0 5% 0 5%;
+}
+
+
 /*------------------------------------*/
 
 @media screen and (min-width: 768px){
