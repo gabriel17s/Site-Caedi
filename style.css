@@ -106,7 +106,7 @@ main section.container{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 20px 4vw 10px 4vw;
+    padding: 20px 4vw 45px 4vw;
 }
 main article#doacao{
     background-color: var(--cor1);
@@ -173,12 +173,11 @@ a.botao h2{
 
 main article#galeria{
     background-color: var(--cor3);
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 30px 30px 10px 40px;
     border-radius: 1cap;
-    height: 580px;
-    width: 90%;
-    max-width: 480px;
+    height: 36em;
+    width: auto;
+    max-width: 434px;
 }
 
 main #galeriafts{
@@ -204,7 +203,7 @@ main article#galeria h1{
 }
 
 #galeria {
-  padding: 40px 0;
+  padding:0;
   text-align: center;
 }
 
@@ -223,14 +222,14 @@ main article#galeria h1{
 }
 
 .cards li {
-    margin: 10px;
+    margin: auto;
 }
 
 .cards img {
-    padding: 0 20px 0 20px;
+    padding: 0;
     margin: auto;
-    width: 420px;
-    height: auto;
+    width: auto;
+    height: 28em;
     display: block;
 }
 
@@ -311,6 +310,10 @@ main article#galeria h1{
 @keyframes spin{
     from {translate: 0;}
     to {translate: -100%;}
+}
+
+.group:hover {
+    animation-play-state: paused;
 }
 /* ---------- FIM DO TUTORIAL -------------*/
 
@@ -431,9 +434,9 @@ section.eventos article:hover{
 /*---------------------SOBRE NÓS---------------------------*/
 main #sobrenos{
     background-color: white;
-    width: 70%;
+    width: 60%;
     border-radius: 12px;
-    padding: 40px 70px 70px 70px;
+    padding: 40px 7em 70px 7em;
     text-align: justify;
     line-height: 24px;
     margin: 50px 0 70px 0;

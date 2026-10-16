@@ -28,39 +28,23 @@
     }
 
     main section.container{
-        padding: 0 0 10px 0;
+        padding: 0 0 20px 0;
     }
 
     main article#doacao{
-        padding: 15px;
+        padding: 25px 25px 40px 25px;
+    }
+    main article#doacao{
+    margin: 20px 0 -20px 0;
     }
     .contribua{
-    width: 90%;}
+    width: 90%;
+    }
 
-    .cards img {
+
+    #galeria{
+        transform: scale(0.82);
         padding: 0;
-        margin: auto;
-        width: 18.4em;
-        height: auto;
-        display: block;
-    }
-    main article#galeria{
-        border-radius: 1cap;
-        height: auto;
-        width: 90%;
-        max-width: 480px;
-    }
-
-    #iconeft{
-        height: 45px;
-        margin: auto;
-        cursor: grab;
-    }
-
-    main article#galeria h1{
-        font-size: 1.5em;
-        padding: 0px 0 10px 0;
-        text-align: left;
         margin: 0;
     }
 
@@ -69,7 +53,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.1em;
-    animation: spin 60s infinite linear;
+    animation: spin 80s infinite linear;
     padding-right: 0.1em;
     }
 
@@ -168,5 +152,12 @@
 @media screen and (min-width: 1080px){
     section.eventos article{
         width: 20.5vw;
+    }
+
+    .profissionais p{
+        margin: 0 30em 0 30em;
+    }
+    .eventos p{
+        margin: 0 30em 0 30em;
     }
 }
